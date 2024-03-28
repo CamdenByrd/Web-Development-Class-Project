@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--Camden Byrd-->
+<!--1001829015-->
+<!--INSY 4315-001
+	Project 1-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Modern Interiors Survey</title>
+		<style>
+			body {
+				background-image: url("Images/BackgroundImg.JPG");
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			h2 {
+				font-family: sans-serif;
+				text-align: center;
+				border-radius: 16px;
+				background-image: linear-gradient(to bottom right, #E0E0E0, #415ac9);
+				box-shadow: 0px 8px 24px;
+				padding: .25em;
+			}
+			div {
+				margin: auto;
+				font-family: sans-serif;
+			}
+			img {
+				margin: auto;
+				float: right;
+				width: 30%;
+				border-radius: 16px;
+				height: 230px;
+			}
+			ol {
+				text-align: left;
+				margin: auto;
+				font-family: sans-serif;
+				font-size: 1.2em;
+			}
+			.paragraph {
+				width: 68%;
+				float: left;
+				border-radius: 16px;
+				background-image: linear-gradient(to bottom right, #E0E0E0, #415ac9);
+				box-shadow: 0px 8px 24px;
+				margin: auto;
+				font-family: sans-serif;
+				font-size: 1.5em;
+				padding: .5%;
+			}
+			.gradshadow {
+				margin: auto;
+				text-align: center;
+				background-image: linear-gradient(to bottom right, #E0E0E0, #415ac9);
+				box-shadow: 0px 8px 24px;
+				border-radius: 16px;
+				padding: .25em;
+				width: 70%;
+				padding: .5%;
+			}
+			hr {
+				border: solid black 2px;
+			}
+			table {
+				margin: auto;
+				font-size: 1.3em;
+				font-family: sans-serif;
+				background-image: linear-gradient(to bottom right, #E0E0E0, #415ac9);
+				box-shadow: 0px 8px 24px;
+				border-radius: 16px;
+				padding: 1%;
+			}
+			label {
+				text-align: right;
+			}
+			td {
+				text-align: right;
+			}
+			.left {
+				text-align: left;
+			}
+			.center {
+				text-align: center;
+				width: 35%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="gradshadow">
+			<h1>Thank You for Chosing Modern Interiors!</h1>
+		</div>
+		<br>
+		<div class="paragraph">
+			<p>
+				You have been randomly selected to participate in our Customer Satisfaction Survey. Please tell us a little bit about yourself below. Please be sure to fill out the following information to give us the best possible feedback on how we might further improve to meet your needs. Partaking in this survey will provide you with free shipping on your next order from us. Your coupon will be delivered to your email after it has been submitted. We look forward to continuing business with you!
+			</p>
+		</div>
+		<img src="Images/miLogo.jpeg" alt="Modern Interiors Logo">
+		<hr style="clear: both;">
+		<form class="container">
+			<table>
+				<thead>
+					<tr><th colspan="4">Personal Information</th></tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><label for="FirstName">First Name:</label></td>
+						<td class="left"><input id="FirstName" type="text" required autofocus></td>
+						<td><label for="LastName">Last Name:</label></td>
+						<td class="left"><input id="LastName" type="text" required></td>
+					</tr>
+					<tr>
+						<td><label for="Email">E-mail Address:</label></td>
+						<td class="left"><input id="Email" type="email" required placeholder="name@MI.com"></td>
+					</tr>
+					<tr>
+						<td><label>Gender:</label></td>
+						<td class="left">
+							<label for="male">Male</label>
+							<input name="gender" type="radio" id="male" value="Male">
+							<label for="female">Female</label>
+							<input name="gender" type="radio" id="female" value="Female">
+						</td>
+					</tr>
+					<tr>
+						<td><label>Age Group:</label></td>
+						<td class="left">
+							<label>Under 21</label>
+							<input name="age" type="radio" id="under21" value="Under 21">
+							<label>21-40</label>
+							<input name="age" type="radio" id="21-40" value="21-40">
+							<label>Over 40</label>
+							<input name="age" type="radio" id="over40" value="Over 40">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<hr>
+			<h2 class="gradshadow">Please respond to the opinion statements using the following scale:</h2>
+			<br>
+			<div class="gradshadow">
+				<ol>
+					<li>= strongly agree</li>
+					<li>= somewhat agree</li>
+					<li>= neither agree or disagree</li>
+					<li>= somewhat disagree</li>
+					<li>= strongly disagree</li>
+				</ol>
+			<br>
+				<ol>
+					<li>Our products are delivered on time
+						<select name="feedback" id="timely">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</li>
+					<li>Our products are reasonably priced
+						<select name="feedback" id="price">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</li>
+					<li>Our products are quality and defect free
+						<select name="feedback" id="defect">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</li>
+					<li>Our products offer variety for many different styles
+						<select name="feedback" id="variety">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</li>
+					<li>Overall, I am satisfied with Modern Interiors products
+						<select name="feedback" id="satisfaction">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</li>
+				</ol>
+			</div>
+			<br>
+			<div class="center">
+				<button type="submit" value="Submit">Submit</button>
+				<button type="reset" value="Reset">Reset</button>
+			</div>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   		<title>Product Order Form</title>
+   		<meta charset="utf-8">
+		<link rel="stylesheet" href="CSS.css">
+   </head>
+   <body>
+   	  	<div class="gradshadow">
+			<h1>Our Products</h1>
+		</div>
+		<br>
+		<ul class="navigation">
+            <li class="navitem"><a href="Index.html">Home</a></li>
+            <li class="navitem"><a href ="Products_cbb.html">Our Products</a></li>
+            <li class="navitem"><a href="AboutUs_cbb.html">About Us</a></li>
+            <li class="navitem"><a href="ContactUs_cbb.html">Contact Us</a></li>
+        </ul>
+	  <hr>
+	  <div class="gradshadow">(Click a Column Heading to Sort)</div>
+	  <form id="prodForm">
+		<table class="table2">
+			<thead>
+				<tr>
+					<td><a id="sortID" href="javascript:sortID()">Product ID</a></td>
+					<td></td>
+					<td><a id="sortName" href="javascript:sortName()">Product Name</a></td>
+					<td>Description</td>
+					<td><a id="sortPrice" href="javascript:sortPrice()">Price</a></td>
+					<td>Quantity</td>
+				</tr>
+				</thead>
+			<tbody id="tbodyRows">
+			</tbody>
+		</table>
+		<br>
+		<p class="gradshadow">
+			<input type="submit" value="Submit" onClick="javacript:confirmQty( )">
+			<input type="reset" value="Reset" onClick="javacript:confirmCancel( )">
+		</p>
+		</form>
+		<script src="Product_Page.js"></script>
+   </body>
+</html>

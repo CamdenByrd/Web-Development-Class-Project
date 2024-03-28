@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--Camden Byrd
+INSY 4315-001
+Project 2-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Welcome to Modern Interiors</title>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body onload="startTimer()">
+    <div class="gradshadow">
+        <h1>Thank you for Choosing Modern Interiors!</h1>
+    </div>
+    <br>
+    <ul class="navigation">
+        <li class="navitem"><a href="Index.html">Home</a></li>
+        <li class="navitem"><a href ="Products_cbb.html">Our Products</a></li>
+        <li class="navitem"><a href="AboutUs_cbb.html">About Us</a></li>
+        <li class="navitem"><a href="ContactUs_cbb.html">Contact Us</a></li>
+    </ul>
+    <br>
+    <div class="paragraph">
+        <p>
+            Modern Interiors serves many corporations and personal needs with our furniture. 
+            We have a variety of options for an ever-changing furniture landscape. 
+            There are a variety of styles and colors for any space you are looking to spruce up!
+            Founded in the Dallas/Fort Worth area, we aim to serve locally and internationally.
+            Our products are sure to fit into any style preference you may have.  
+        </p>
+    </div>
+    <img src="Images/miLogo.jpeg" alt="Modern Interiors Logo">
+    <hr style="clear: both;">
+    <img class="img2" src="Images/DivImage_Index.jpg" alt="Common Area Furniture">
+    <div id="welcomeMessage">
+        <p class="paragraph">
+            Want a more personalized experience on our website?
+            <a href="#" id="nameLink">Please click here to provide your name</a>
+        </p>
+    </div>
+    <hr style="clear: both;">
+    <h2 class="gradshadow">A Little About Us</h2>
+    <br>
+    <p class="history">
+        We have been in operation for 15 years. 
+        Since then we have served many big names in business.
+        We started as a small, family-run business but have since grown to provide services on an international scale.
+        We source our materials from local suppliers whenever possible.
+        Quality guaranteed. Excellence always. 
+    </p>
+
+    <script type="text/javascript">
+        function createCookie(cName, cValue, expDays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (expDays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cName + "=" + cValue + ";" + expires + ";path=/";
+        }
+
+        function readCookie(cName) {
+            var keyName = cName + "=";
+            var cArray = document.cookie.split(';');
+            for (var i = 0; i < cArray.length; i++) {
+                var c = cArray[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(keyName) == 0) {
+                    return c.substring(keyName.length, c.length);
+                }
+            }
+            return null;
+        }
+
+        function updateWelcomeMessage(userName) {
+            var welcomeMessage = document.getElementById("welcomeMessage");
+            welcomeMessage.innerHTML = "<p class='paragraph'>Welcome, " + userName + "! We hope you will enjoy your Modern Interiors experience!</p>";
+        }
+
+        function startTimer() {
+            var timer = setInterval(function() {
+                var randomNum = Math.ceil(Math.random() * 10);
+                if (randomNum % 3 === 0) {
+                    clearInterval(timer);
+                    confirm("You have been randomly selected to participate in a customer satisfaction survey.");
+                    window.location.href = "4315_Lab1_cbb9015.html";
+                }
+            }, 3000);
+
+            var nameLink = document.getElementById("nameLink");
+            var userName = readCookie("username");
+            if (!userName) {
+                nameLink.addEventListener("click", function(event) {
+                    event.preventDefault();
+                    userName = prompt("Welcome! Please enter your name:");
+                    if (userName) {
+                        createCookie("username", userName, 21);
+                        nameLink.style.display = "none";
+                        updateWelcomeMessage(userName);
+                    }
+                });
+            } else {
+                nameLink.style.display = "none";
+                updateWelcomeMessage(userName);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+[
+	{
+		"prodID": 101, 
+		"prodImg": "Images/AccentVase.jpg",
+		"prodName": "Floral Accent Vase",
+		"prodDesc": "This accent vase will spruce up any room you put it in",
+		"prodPrice": 15.65
+	},
+	{
+		"prodID": 102,
+		"prodImg": "Images/BlackCouch.jpg",
+		"prodName": "Black Elbow Couch",
+		"prodDesc": "This sleak elbow couch will ensure a stylistic approach to comfort",
+		"prodPrice": 499.99
+	},
+	{
+		"prodID": 103,
+		"prodImg": "Images/DeskChair.jpg",
+		"prodName": "Ergonomic Desk Chair",
+		"prodDesc": "This desk chair is sure to comform to your proper posture while you can remain productive",
+		"prodPrice": 199.99
+	},
+	{
+		"prodID": 104, 
+		"prodImg": "Images/DiningChairs.jpg",
+		"prodName": "White Dining Chairs",
+		"prodDesc": "These white dining chairs are sure to draw the minimalist eyes in any of your visitors",
+		"prodPrice": 399.99
+	},
+	{
+		"prodID": 105, 
+		"prodImg": "Images/OrangeCouch.jpg",
+		"prodName": "Orange Double Couch",
+		"prodDesc": "This orange couch is sure to add an eye-popping appeal to any comfort space",
+		"prodPrice": 299.99
+	},
+	{
+		"prodID": 106, 
+		"prodImg": "Images/RedStool.jpg",
+		"prodName": "Red Bar Stool",
+		"prodDesc": "This red bar stool is certain to add an avant-garde look to any social space",
+		"prodPrice": 59.99
+	},
+	{
+		"prodID": 107, 
+		"prodImg": "Images/RusticChair.jpg",
+		"prodName": "Wooden Rustic Chair",
+		"prodDesc": "A natural wooden look for the lovers of all things rustic",
+		"prodPrice": 99.99
+	},
+	{
+		"prodID": 108, 
+		"prodImg": "Images/WoodenChair.jpg",
+		"prodName": "Modern Wooden Chair",
+		"prodDesc": "This chair is sure ot catch the eyes of any and all visitors whether inside or outdoors",
+		"prodPrice": 199.99
+	},
+	{
+		"prodID": 109, 
+		"prodImg": "Images/WoodenOrganizer.jpg",
+		"prodName": "Wooden Organizer",
+		"prodDesc": "This multi-shelf organizer will separate your stuff and provide a unique appeal to any space",
+		"prodPrice": 59.99
+	},
+	{
+		"prodID": 110, 
+		"prodImg": "Images/WoodenSideTable.jpg",
+		"prodName": "Wooden Side Table",
+		"prodDesc": "This side table is sure to pair well with any lounge area to provide a natural feel",
+		"prodPrice": 129.99
+	}
+]
